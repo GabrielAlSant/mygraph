@@ -1,122 +1,75 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+import './index.css'
 import ReactEcharts from 'echarts-for-react'; // importe o componente do pacote correto
+
 
 function App() {
   const options = {
     title: { 
-      text: 'Grafico'
+      text: ''
     },
     legend: {
-      data: ['Zed', 'Kayn']
+      data: ['Neymar', 'Messi', 'CR 7', 'Mbape']
     },
     radar: {
       
       indicator: [
-        { name: 'Força', max: 6500 },
-        { name: 'Velocidade', max: 16000 },
-        { name: 'QI', max: 60000 },
-        { name: 'Poder Mágico', max: 38000 },
-        { name: 'Persuasão', max: 52000 },
-        { name: 'Força Física', max: 25000 }
+        { name: 'Força', max: 10 },
+        { name: 'Velocidade', max: 10 },
+        { name: 'QI', max: 10 },
+        { name: 'Poder do Chute', max: 10 },
+        { name: 'Disparada', max: 10 },
+        { name: 'Gol em campeonato', max: 10 }
       ]
     },
     series: [
       {
-        name: 'Zed vs Kayn',
+        name: 'Jogadores',
         type: 'radar',
         data: [
           {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
-            name: 'Zed'
+            value: [4, 3, 2, 3, 5, 1],
+            name: 'Neymar'
           },
           {
-            value: [5000, 14000, 28000, 26000, 42000, 21000],
-            name: 'Kayn'
+            value: [5, 1, 2, 2, 4, ],
+            name: 'Messi'
+          },
+          {
+            value: [5, 2,8,7,4,2,3],
+            name: 'CR 7'
+          },
+          {
+            value: [5, 1, 8, 3, 4, 2],
+            name: 'Mbape'
           }
         ]
       }
     ]
   };
 
-  const options1 = {
-    title: { 
-      text: 'Grafico'
-    },
-    legend: {
-      data: ['Zead', 'Kayan']
-    },
-    radar: {
-      
-      indicator: [
-        { name: 'Força', max: 6500 },
-        { name: 'Velocidade', max: 16000 },
-        { name: 'QI', max: 60000 },
-        { name: 'Poder Mágico', max: 38000 },
-        { name: 'Persuasão', max: 52000 },
-        { name: 'Força Física', max: 25000 }
-      ]
-    },
-    series: [
-      {
-        name: 'Zed vs Kayn',
-        type: 'radar',
-        data: [
-          {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
-            name: 'Zed'
-          },
-          {
-            value: [5000, 14000, 28000, 26000, 42000, 21000],
-            name: 'Kayn'
-          }
-        ]
-      }
-    ]
-  };
-
-  const options2 = {
-    title: { 
-      text: 'Grafico'
-    },
-    legend: {
-      data: ['Zed', 'Kayn']
-    },
-    radar: {
-      
-      indicator: [
-        { name: 'Força', max: 6500 },
-        { name: 'Velocidade', max: 16000 },
-        { name: 'QI', max: 60000 },
-        { name: 'Poder Mágico', max: 38000 },
-        { name: 'Persuasão', max: 52000 },
-        { name: 'Força Física', max: 25000 }
-      ]
-    },
-    series: [
-      {
-        name: 'Zed vs Kayn',
-        type: 'radar',
-        data: [
-          {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
-            name: 'Zed'
-          },
-          {
-            value: [5000, 14000, 28000, 26000, 42000, 21000],
-            name: 'Kayn'
-          }
-        ]
-      }
-    ]
-  };
   
   return (
 
-      <div className="App">
-        <ReactEcharts option={options} style={{height: '400px', width: '600px'}} />
+      <div className="app">
+         <h1>Radar de Jogadores</h1>
+       <div className='App'>
+       <div className='esquerdo'>
+          <div className='card'>
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IW1M4zJNlJYhOczq_HEyQHYfQGyFECoeQw&usqp=CAU'></img>
+            <div>Neymar</div>
+          </div>
+          <div className='card'>
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IW1M4zJNlJYhOczq_HEyQHYfQGyFECoeQw&usqp=CAU'></img>
+            <div>Neymar</div>
+          </div>
+        </div>
+     
+        <div className='direito'>
+        <ReactEcharts option={options} className='grafico' style={{  height: '400px'}} />
 
-        
+        </div>
+       </div>
       </div>
     );
 }

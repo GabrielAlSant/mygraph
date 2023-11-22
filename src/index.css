@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.App {
+  display: flex;
+  justify-content: center;
+ background-color: rgb(42, 5, 76);
+ border-top-right-radius: 120%;
+ border-bottom-left-radius: 10%;
+ border-bottom-right-radius: 5%;
+ height: 80vh;
+
+}
+
+.grafico{
+
+  width: 500px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+h1 {
+  color: rgb(112, 44, 177);
+  text-align: center;
+}
+
+.direito{
+  background-color: white;
+  height: 500px;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+
+.esquerdo{
+ display: flex;
+
+}
+
+.card {
+  border: 1px solid black;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  height: 250px;
+  font-weight: bolder;
+  margin: 10px;
+
+}
+
+.card div{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.card img{
+  width: 200px;
+  height: 150px;
+  border-radius: 25%;
+  margin-top: 20px;
 }
