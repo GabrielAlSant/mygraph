@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css'
 import ReactEcharts from 'echarts-for-react'; // importe o componente do pacote correto
-
+import ney from './ney.png'
 
 function App() {
   const options = {
@@ -9,7 +9,7 @@ function App() {
       text: ''
     },
     legend: {
-      data: ['Neymar', 'Messi', 'CR 7', 'Mbape']
+      data: []
     },
     radar: {
       
@@ -56,17 +56,25 @@ function App() {
        <div className='App'>
        <div className='esquerdo'>
           <div className='card'>
-            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IW1M4zJNlJYhOczq_HEyQHYfQGyFECoeQw&usqp=CAU'></img>
-            <div>Neymar</div>
+            <img src={ney}></img>
+         
           </div>
           <div className='card'>
-            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IW1M4zJNlJYhOczq_HEyQHYfQGyFECoeQw&usqp=CAU'></img>
-            <div>Neymar</div>
+            <img src={ney}></img>
+         
+          </div>
+          <div className='card'>
+            <img src={ney}></img>
+         
+          </div>
+          <div className='card'>
+            <img src={ney}></img>
+            
           </div>
         </div>
      
         <div className='direito'>
-        <ReactEcharts option={options} className='grafico' style={{  height: '400px'}} />
+        <ReactEcharts option={options} className='grafico' style={{  height: '500px',background:'none', border:'none'}} />
 
         </div>
        </div>
