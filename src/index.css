@@ -15,20 +15,20 @@ code {
 
 
 .App {
+ margin-top: 10vh;
   display: flex;
   justify-content: center;
  padding: 50px;
- margin: 20px;
+ 
  border-radius: 20px;
 }
 
 .grafico{
-
-  width: 500px;
+  width: 900px;
   border: 1px solid white;
   border-radius: 50px;
-
-  margin-left: 50px;
+  position: fixed;
+  font-size: 50px;
 }
 
 h1 {
@@ -38,20 +38,23 @@ h1 {
 }
 
 .direito{
-  
+  margin-top:-20px ;
+  display: flex;
+  width: 50%;
   height: 500px;
   border-radius: 20px;
   padding: 10px;
-
+  justify-content: center;
 }
 
 
 .esquerdo{
+  width: 50%;
  display: flex;
  flex-wrap: wrap;
  border-radius: 20px;
  padding: 10px;
-
+justify-content: center;
 
 }
 
@@ -73,8 +76,14 @@ h1 {
 }
 
 .card div{
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 35px;
+  margin-top: -396px;
+  position: relative;
+  width: 40px;
+  height: 392.5px;
+  color: #1008a8;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 50px blue;
 }
 .card img{
   width: 100%;

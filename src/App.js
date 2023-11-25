@@ -2,6 +2,11 @@ import React from 'react';
 import './index.css'
 import ReactEcharts from 'echarts-for-react'; // importe o componente do pacote correto
 import ney from './ney.png'
+import messi from './messi.png'
+import mb from './mb.png'
+import cr7 from './cr7.png'
+import vini from './vini.png'
+import mar from './marcelo.png'
 
 function App() {
   const options = {
@@ -10,16 +15,16 @@ function App() {
     },
     legend: {
       data: []
-    },
+    }, 
     radar: {
       
       indicator: [
-        { name: 'Força', max: 10 },
-        { name: 'Velocidade', max: 10 },
-        { name: 'QI', max: 10 },
-        { name: 'Poder do Chute', max: 10 },
-        { name: 'Disparada', max: 10 },
-        { name: 'Gol em campeonato', max: 10 }
+        { name: 'Força', max: 10, nameTextStyle: { fontSize: 25 } },
+        { name: 'Velocidade', max: 10, nameTextStyle: { fontSize: 25 } },
+        { name: 'Técnica', max: 10 , nameTextStyle: { fontSize: 25 }},
+        { name: 'Poder do Chute', max: 10 , nameTextStyle: { fontSize: 25 }},
+        { name: 'Disparada', max: 10, nameTextStyle: { fontSize: 25 } },
+        { name: 'Salto', max: 10 , nameTextStyle: { fontSize: 25 }}
       ]
     },
     series: [
@@ -55,26 +60,35 @@ function App() {
          <h1>Radar de Jogadores</h1>
        <div className='App'>
        <div className='esquerdo'>
-          <div className='card'>
+          <div className='card'>     
             <img src={ney}></img>
+            <div>N E Y M A R</div>
          
           </div>
           <div className='card'>
-            <img src={ney}></img>
-         
+            <img src={messi}></img>
+             <div>M E S S I</div>
           </div>
           <div className='card'>
-            <img src={ney}></img>
-         
+            <img src={mb}></img>
+            <div>M B A P P E</div>
           </div>
           <div className='card'>
-            <img src={ney}></img>
-            
+            <img src={cr7}></img>
+            <div>R O N A L D O</div>
+          </div>
+          <div className='card'>
+            <img src={vini}></img>
+            <div> V I N I</div>
+          </div>
+          <div className='card'>
+            <img src={mar}></img>
+            <div> M A R C E L O</div>
           </div>
         </div>
      
         <div className='direito'>
-        <ReactEcharts option={options} className='grafico' style={{  height: '500px',background:'none', border:'none'}} />
+        <ReactEcharts option={options} className='grafico' style={{  height: '600px',background:'none', border:'none', fontSize:'10px'}} />
 
         </div>
        </div>
