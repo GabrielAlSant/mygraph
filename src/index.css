@@ -13,22 +13,53 @@ code {
     monospace;
 }
 
+.titulo {
+  font-family: 'Krona One', sans-serif;
+  font-size: 40px;
+  color: #1506fa;
+}
 
 .App {
- margin-top: 10vh;
+ margin-top: -3vh;
   display: flex;
   justify-content: center;
  padding: 50px;
- 
  border-radius: 20px;
 }
 
 .grafico{
-  width: 900px;
+  width: 500px;
   border: 1px solid white;
   border-radius: 50px;
   position: fixed;
   font-size: 50px;
+}
+
+.status { 
+  margin-top: 420px;
+  background-color: aliceblue;
+  color:black;
+  width: 736px;
+  position: fixed;
+
+}
+
+.status{
+  text-align:center;
+  font-family: 'Krona One', sans-serif;
+  font-size: 15px;
+}
+
+.valor {
+  display: flex;
+}
+
+
+.valor .att{
+  border: 1px solid black;
+  padding: 10px;
+  width: 122px !important;
+ 
 }
 
 h1 {
@@ -38,10 +69,9 @@ h1 {
 }
 
 .direito{
-  margin-top:-20px ;
+  margin-top:5px ;
   display: flex;
   width: 50%;
-  height: 500px;
   border-radius: 20px;
   padding: 10px;
   justify-content: center;
