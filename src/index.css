@@ -39,8 +39,9 @@ code {
   margin-top: 420px;
   background-color: aliceblue;
   color:black;
-  width: 736px;
+  width: 700px;
   position: fixed;
+  border-radius: 20px;
 
 }
 
@@ -50,13 +51,19 @@ code {
   font-size: 15px;
 }
 
+.status h3
+{
+  color: #1506fa;
+
+}
+
 .valor {
   display: flex;
 }
 
 
 .valor .att{
-  border: 1px solid black;
+ 
   padding: 10px;
   width: 122px !important;
  

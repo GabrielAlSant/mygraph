@@ -86,8 +86,12 @@ function App() {
                       {
                         value: selectedValue,
                         name: selectedPlayer
-                      }
-                    ]
+                      },
+                    ],
+                    lineStyle: {
+                      width: 6
+                    },
+                    symbolSize: 12
                   }
                 ]
               }}
@@ -96,14 +100,14 @@ function App() {
             />
           )}
            <div className='status'>
-            <h3>Nome do Jogador: {selectedPlayer || 'Não há nenhum Selecionado'}</h3>
+            <h3>{selectedPlayer || 'Não há nenhum Selecionado'}</h3>
             <div className='valor'>
-            <div className='att'>Força: <div>{selectedValue[0] || 0}</div></div>
-            <div className='att'>Velocidade: <div>{selectedValue[1] || 0}</div></div>
-            <div className='att'>Técnica: <div>{selectedValue[2] || 0}</div></div>
-            <div className='att'>Precisão: <div>{selectedValue[3] || 0}</div></div>
-            <div className='att'>Disparada: <div>{selectedValue[4] || 0}</div></div>
-            <div className='att'>Salto: <div>{selectedValue[5] || 0}</div></div>
+            <div className='att'>{selectedValue[0] || 0}<div>Força</div></div>
+            <div className='att'>{selectedValue[1] || 0}<div>Velocidade</div></div>
+            <div className='att'>{selectedValue[2] || 0}<div>Técnica</div></div>
+            <div className='att'>{selectedValue[3] || 0}<div>Precisão</div></div>
+            <div className='att'>{selectedValue[4] || 0}<div>Disparada</div></div>
+            <div className='att'>{selectedValue[5] || 0}<div>Salto</div></div>
             </div>
          </div>
          
