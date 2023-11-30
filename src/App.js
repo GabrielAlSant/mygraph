@@ -48,27 +48,27 @@ function App() {
       <div className='App'>
         <div className='esquerdo'>
         
-          <div className='card' onClick={() => [setSelectedPlayer('Neymar'), setSelectedValue([4, 3, 2, 3, 5, 1] )]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Neymar'), setSelectedValue([7, 7, 9, 8, 7, 8] )]}>
           <img src={ney}></img>
             <div>N E Y M A R</div>
           </div>
-          <div className='card' onClick={() => [setSelectedPlayer('Messi'), setSelectedValue([5, 2,8,7,4,2])]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Messi'), setSelectedValue([7,6,8,7,5,6])]}>
           <img src={messi}></img>
              <div>M E S S I</div>
           </div>
-          <div className='card' onClick={() => [setSelectedPlayer('Mbappe'), setSelectedValue([5,2,1,5,6,8])]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Mbappe'), setSelectedValue([7,8,6,7,6,8])]}>
           <img src={mb}></img>
             <div>M B A P P E</div>
           </div>
-          <div className='card' onClick={() => [setSelectedPlayer('Cristiano Ronaldo'), setSelectedValue([5,2,1,5,6,8])]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Cristiano Ronaldo'), setSelectedValue([8,9,8,9,9,10])]}>
           <img src={cr7}></img>
             <div>R O N A L D O</div>
           </div>
-          <div className='card' onClick={() => [setSelectedPlayer('Vini'), setSelectedValue([8,3,4,2,5,9])]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Vini'), setSelectedValue([8,8,5,6,6,9])]}>
           <img src={vini}></img>
             <div>V I N I</div>
           </div>
-          <div className='card' onClick={() => [setSelectedPlayer('Marcelo'), setSelectedValue([6,4,2,9,6,2])]}>
+          <div className='card' onClick={() => [setSelectedPlayer('Marcelo'), setSelectedValue([7,8,6,9,6,8])]}>
           <img src={mar}></img>
             <div>M A R C E L O</div>
           </div>

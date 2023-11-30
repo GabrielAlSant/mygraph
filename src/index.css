@@ -112,6 +112,41 @@ justify-content: center;
   box-shadow: 2px 2px 35px #1008a8;
 }
 
+
+.card:hover {
+  border: 1px solid black;
+  width: 217.5px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  color: white;
+  height: 352.5px;
+  font-weight: bolder;
+  margin: 20px;
+  background-image: url('./bg.jpg') ;
+  background-size: cover;
+  border: 0.1px solid white;
+  box-shadow: 2px 2px 35px red;
+}
+
+.card:active {
+  border: 1px solid black;
+  width: 217.5px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  color: white;
+  height: 352.5px;
+  font-weight: bolder;
+  margin: 20px;
+  background-image: url('./bg.jpg') ;
+  background-size: cover;
+  border: 0.1px solid white;
+  box-shadow: 2px 2px 35px green;
+}
+
 .card div{
   font-size: 35px;
   margin-top: -396px;
