@@ -100,7 +100,7 @@ function App() {
             />
           )}
            <div className='status'>
-            <h3>{selectedPlayer || 'Não há nenhum Selecionado'}</h3>
+            <h3>{selectedPlayer || 'Não há nenhum jogador selecionado'}</h3>
             <div className='valor'>
             <div className='att'>{selectedValue[0] || 0}<div>Força</div></div>
             <div className='att'>{selectedValue[1] || 0}<div>Velocidade</div></div>
