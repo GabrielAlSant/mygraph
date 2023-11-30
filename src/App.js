@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css'
-import ReactEcharts from 'echarts-for-react'; // importe o componente do pacote correto
+import ReactEcharts from 'echarts-for-react';
 import ney from './ney.png'
 import messi from './messi.png'
 import mb from './mb.png'
